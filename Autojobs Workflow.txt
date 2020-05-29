@@ -1,0 +1,10 @@
+Landing page (background-image) => z-index: 10
+Landing page => z-index: 20
+Login page => z-index: 5
+Signup page => z-index: 5
+
+On clicking LOGIN button:-
+Login page => z-index:30
+
+On clicking SIGNUP button:-
+Signup page => z-index:30

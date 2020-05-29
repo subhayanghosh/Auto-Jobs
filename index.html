@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Auto Jobs</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    </head>
+    <body>
+        <!-- Landing page -->
+        <div id="background-image"></div>
+        <div id="container1">
+            <div id="header">
+                <div id="brand">
+                    <a href="#">AUTO JOBS</a>
+                </div>
+                <div id="navbar">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact</a>
+                </div>
+                <button id="signup-button">Sign Up</button>
+                <button id="login-button">Log In</button>
+            </div>
+            <div id="moto">
+                <p id="moto-paragraph1">The Easiest Way To Get Your Dream Job</p>
+                <p id="moto-paragraph2">We get you the job that you deserve with the help of</p>
+            </div>
+            <div id="features">
+                <div class="features-content">
+                    <p>Rapid Search</p>
+                    <i class="fas fa-search features-icon"></i>
+                </div>
+                <div class="features-content">
+                    <p>Smart Match</p>
+                    <i class="fab fa-linkedin-in  features-icon"></i>
+                </div>
+                <div class="features-content">
+                    <p>Custom Templates</p>
+                    <i class="far fa-comment-dots  features-icon"></i>
+                </div> 
+            </div>
+        </div>
+        <!-- Login page -->
+        <div id="login-overlay">
+            <div id="login-container">
+                <div id="login-container-header">
+                    <p>Account Login</p>
+                    <button class="cross-button"><i class="fas fa-times"></i></button>
+                </div>
+                <div id="login-box">
+                    <form method="post">
+                        <div class="login-credentials" id="login-box-username">
+                            <i class="far fa-user login-credentials-icon" id="login-credentials-username-icon"></i>
+                            <input type="text" id="login-credentials-username" class="login-credentials-input" name="login-username" placeholder="User name">
+                        </div>
+                        <div class="login-credentials" id="login-box-password">
+                            <i class="fas fa-lock login-credentials-icon" id="login-credentials-password-icon"></i>
+                            <input type="password" id="login-credentials-password" class="login-credentials-input" name="login-password" placeholder="Password">
+                        </div>
+                        <div id="login-submit-button">
+                            <input type="submit" id="login-credentials-submit" value="LOGIN">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Signup page -->
+        <div id="signup-overlay">
+            <div id="signup-container">
+                <div id="signup-container-header">
+                    <p>Account Registration</p>
+                </div>
+                <div id="signup-box">
+                    <form method="post">
+                        <div class="signup-credentials" id="signup-box-firstname&surname">
+                            <input type="text" id="signup-credentials-firstname" name="signup-firstname" placeholder="First Name">
+                            <input type="text" id="signup-credentials-surname" name="signup-surname" placeholder="Surname"> 
+                        </div>
+                        <div class="signup-credentials" id="signup-box-email">
+                            <input type="email" id="signup-credentials-email" name="signup-email" placeholder="Email">
+                        </div>
+                        <div class="signup-credentials" id="signup-box-mobile-no">
+                            <input type="number" id="signup-credentials-mobile-no" name="
+                            signup-mobile-no" placeholder="Mobile Number">
+                        </div>
+                        <div class="signup-credentials" id="signup-box-username">
+                            <input type="text" id="signup-credentials-username" name="signup-username" placeholder="Username">
+                        </div>
+                        <div class="signup-credentials" id="signup-box-password">
+                            <input type="password" id="signup-credentials-new-password" name="signup-new-password" placeholder="New Password">
+                            <input type="password" id="signup-credentials-repeat-password" name="signup-repeat-password" placeholder="Repeat Password">
+                        </div>
+                        <div class="signup-credentials" id="signup-box-birthday">
+                            <label for="signup-credentials-birthday">Birthday</label>
+                            <input type="text" id="signup-credentials-birthday" name="signup-birthday">
+                        </div>
+                        <div class="signup-credentials" id="signup-box-gender">
+                            <label>Female<input type="radio" name="signup-gender" value="female"></label>
+                            <label>Male<input type="radio" name="signup-gender" value="male"></label>
+                            <label>Others<input type="radio" name="signup-gender" value="others"></label>
+                        </div>
+                        <div id="signup-submit-button">
+                            <input type="submit" id="signup-credentials-submit" value="SIGN UP">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

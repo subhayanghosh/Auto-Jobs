@@ -1,0 +1,293 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+#background-image{
+    background: url(images/container.jpg);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 53.5vw;
+    position: fixed;
+    z-index: 10;
+}
+
+#container1{
+    display: flex;
+    flex-flow: column wrap;
+    background: url(images/container.jpg);
+    background-size: 100% 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 20;
+}
+
+#header{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 100%;
+    height: 6vw;
+}
+
+#brand{
+    padding-left: 5vw;
+    padding-right: 18vw;
+}
+
+#brand a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+
+#navbar{
+    padding-right: 18vw;
+}
+
+#navbar a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1vw;
+    font-weight: 500;
+    margin-left: 3vw;
+    transition: color 0.3s ease;
+}
+
+#navbar a:hover{
+    color: rgba(255, 255, 255, 1);
+}
+
+#signup-button{
+    font-size: 1vw;
+    font-weight: 500;
+    padding: 0.5vw 1.5vw;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border-color: white;
+    border-style: solid;
+    border-radius: 0.2vw;
+    cursor: pointer;
+    margin-right: 0.5vw;
+}
+
+#login-button{
+    font-size: 1vw;
+    font-weight: 500;
+    padding: 0.6vw 1.5vw;
+    background-color: #90C317;
+    color: white;
+    border: none;
+    border-radius: 0.2vw;
+    cursor: pointer;
+}
+
+#moto{
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    padding-top: 15vw;
+    margin-bottom: 6vw;
+    justify-content: center;
+    align-items: center;
+}
+
+#moto-paragraph1{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 2vw;
+    font-size: 3vw;
+    font-weight: bold;
+    color: white;
+}
+
+#moto-paragraph2{
+    padding: 0;
+    margin: 0;
+    font-size: 1.5vw;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#features{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 12vw;
+}
+
+.features-content{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.features-content p{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1vw;
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: white
+}
+
+.features-icon{
+    font-size: 2.5vw;
+    color: #90C317;
+}
+
+#login-overlay{
+    width: 100%;
+    height: 53.5vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+
+#login-container{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -30vw;
+    transition: top 2s ease;
+}
+
+#login-container-header{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#login-container-header p{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 2vw;
+    font-size: 2vw;
+    font-weight: 900;
+    color: white;
+    text-transform: uppercase;
+}
+
+.cross-button{
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    font-size: 2vw;
+    position: absolute;
+    top: 3vw;
+    left: 63vw;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.cross-button:hover{
+    color: red;
+}
+
+#login-box{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    background-color: white;
+    border-radius: 0.8vw;
+}
+
+.login-credentials{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 3vw 0;
+    border-bottom: solid thin;
+    border-color: rgba(0, 0, 0, 0.1);
+    transition: border-color 0.5s ease;
+}
+
+.login-credentials-icon{
+    padding: 0 2vw;
+    font-size: 1.3vw;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.login-credentials input{
+    padding: 0;
+    margin: 0;
+    border: none;
+    width: 20vw;
+    font-size: 1.3vw;
+    padding-right: 0.5vw;
+}
+
+.login-credentials input:focus{
+    outline: none;
+}
+
+#login-submit-button{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 2vw 0;
+}
+
+#login-credentials-submit{
+    padding: 0.7vw 3vw;
+    font-size: 1.3vw;
+    font-weight: bold;
+    background-color: #90C317;
+    color: white;
+    border: none;
+    border-radius: 4vw;
+}
+
+#signup-overlay{
+    width: 100%;
+    height: 53.5vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 40;
+}
+
+#signup-container{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 10vw;
+}
+
+#signup-container-header{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#signup-container-header p{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 2vw;
+    font-size: 2vw;
+    font-weight: 900;
+    color: white;
+    text-transform: uppercase;
+}
+
+#signup-box{
+    display: flex;
+    flex-flow: column wrap;
+    background-color: white;
+    padding: 1vw;
+}
+
+.signup-credentials input{
+    padding: 0;
+}
